@@ -1,0 +1,8 @@
+.venv/
+corpus/
+data/
+indexes/
+__pycache__/
+*.pyc
+*.pkl
+.env

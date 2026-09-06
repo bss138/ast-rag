@@ -1,0 +1,13 @@
+corpora:
+  tiny_network:
+    root: corpus/tiny-network
+    include: ["network.c", "network.h"]
+    role: fixture
+  libevent:
+    root: corpus/libevent
+    include_globs: ["*.c", "*.h", "include/event2/*.h"]
+    exclude: [wepoll.c, win32select.c, event_iocp.c, buffer_iocp.c,
+              bufferevent_async.c, evthread_win32.c, devpoll.c, evport.c,
+              signalfd.c, arc4random.c, sha1.c, strlcpy.c,
+              bufferevent_openssl.c, bufferevent_mbedtls.c, bufferevent_ssl.c]
+    role: eval
